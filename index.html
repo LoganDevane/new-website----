@@ -1,118 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New York Jets</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New York Jets</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+
+
+
+
+
+
+
+body {
+font-family: 'Copperplate Gothic Light', 'URW Gothic L', sans-serif;
+margin: 0;
+padding: 0;
+background: url("https://www.suiteexperiencegroup.com/assets/images/jets-suite-level-6-view.jpg") no-repeat center center fixed;
+background-size: cover;
+color: #ffffff;
+overflow-x: hidden;
+position: relative;
+}
+
+
+
+
+
+
+
+
+body::before {
+content: "";
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.65);
+z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+header {
+background-color: rgba(0,0,0,0.8);
+padding: 30px 20px;
+text-align: center;
+border-bottom: 4px solid #2e7d32;
+box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+
+header h1 {
+margin: 0;
+font-size: 3.5em;
+color: #2e7d32;
+letter-spacing: 4px;
+text-transform: uppercase;
+animation: glow 2s infinite alternate;
+}
+
+
+@keyframes glow {
+from { text-shadow: 0 0 10px #0be016, 0 0 20px #2e7d32; }
+to { text-shadow: 0 0 20px #0be016, 0 0 40px #2e7d32; }
+}
+
+
+nav {
+margin: 20px 0;
+}
+
+
+nav a {
+color: #ffffff;
+text-decoration: none;
+margin: 0 15px;
+font-size: 1.3em;
+transition: color 0.3s, transform 0.2s;
+}
+
+
+nav a:hover {
+color: #2e7d32;
+transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+section {
+padding: 30px;
+text-align: center;
+background: rgba(0,0,0,0.6);
+margin: 20px auto;
+border-radius: 12px;
+width: 85%;
+}
+
+
+section h2 {
+font-size: 2.2em;
+margin-bottom: 20px;
+color: #2e7d32;
+}
+
+
+
+
+
+
+
+
+
+
+.player-info {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+
+.player {
+background: #ffffff;
+color: #000000;
+border: 2px solid #2e7d32;
+padding: 15px;
+margin: 15px;
+width: 220px;
+text-align: center;
+border-radius: 12px;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.player:hover {
+transform: translateY(-8px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+.player-photo {
+width: 120px;
+height: 120px;
+object-fit: cover;
+border-radius: 50%;
+margin-bottom: 10px;
+border: 10px solid #2e7d32;
+box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+
+.stats {
+display: none;
+margin-top: 10px;
+font-size: 0.9em;
+color: #003f2d;
+background: #2e7d32;
+padding: 10px;
+border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+.button {
+background: #ffffff;
+color: #000000;
+border: none;
+padding: 10px 20px;
+border-radius: 8px;
+font-size: 1em;
+cursor: pointer;
+margin-top: 10px;
+font-weight: bold;
+transition: all 0.3s ease;
+box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
+.button:hover {
+background: #003f2d;
+color: #2e7d32;
+box-shadow: 0 4px 16px rgba(0,132,77,0.4);
+transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+#upcoming-games ul {
+list-style: none;
+padding: 0;
+font-size: 1.2em;
+}
+
+
+#upcoming-games li {
+margin: 8px 0;
+padding: 6px;
+
+
+}
+
+
+#upcoming-games li:hover {
+background: rgba(255,247,0,0.15);
+transform: scale(1.05);
+color: #2e7d32;
+}
+
+
+
+
+
+
+
+
+footer {
+text-align: center;
+padding: 20px;
+background: rgba(0,0,0,0.9);
+border-top: 4px solid #2e7d32;
+margin-top: 40px;
+}
+
+
+footer p {
+margin: 0;
+color: #2e7d32;
+font-weight: bold;
+}
+</style>
 </head>
 <body>
-    <header>
-        <h1>New York Jets</h1>
-        <nav>
-            <ul>
-                <li><a href="#team-logo">Team Logo History</a></li>
-                <li><a href="#players">Players</a></li>
-                <li><a href="#upcoming-games">Upcoming Games</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+<h1>NEW YORK JETS</h1>
+<nav>
+<ul>
+<li><a href="#team-logo">Team Logo History</a></li>
+<li><a href="#players">Players</a></li>
+<li><a href="#upcoming-games">Upcoming Games</a></li>
+<li><a href="#highlights">Highlights</a></li>
+<li><a href="#fan-zone">Fan Zone</a></li>
+</ul>
+</nav>
+</header>
 
-    <section id="team-logo">
-        <h2>Team Logo History</h2>
-        <img src="img/new-york-jets-logo-history-v0-by59gr782dxd1.webp" alt="New York Jets Logo">
-    </section>
 
-    <section id="players">
-        <h2>Players</h2>
-        <div class="player-info">
-            <div class="player">
-                <img src="img/Justin-Fields-solo-scaled.avif" alt="Justin Fields" class="player-photo">
-                <h3>JUSTIN FIELDS</h3>
-                <p>POSITION: QUARTERBACK</p>
-                <p>NUMBER: 7</p>
-                <button class="button">Show Stats</button>
-            </div>
-            <div class="player">
-                <img src="img/ny-jets-garrett-wilson-wide-receiver-ranking.webp" alt="Garret Wilson" class="player-photo">
-                <h3>GARRET WILSON</h3>
-                <p>POSITION: WIDE RECEIVER</p>
-                <p>NUMBER: 5</p>
-                <button class="button">Show Stats</button>
-            </div>
-            <div class="player">
-                <img src="img/hcytqslo3kw5wupoweqb.jpg" alt="Breece Hall" class="player-photo">
-                <h3>BREECE HALL</h3>
-                <p>POSITION: RUNNING BACK</p>
-                <p>NUMBER: 20</p>
-                <button class="button">Show Stats</button>
-            </div>
-            <div class="player">
-                <img src="https://via.placeholder.com/100?text=Sauce" alt="Sauce Gardner" class="player-photo">
-                <h3>SAUCE GARDNER</h3>
-                <p>POSITION: CORNER BACK</p>
-                <p>NUMBER: 1</p>
-                <button class="button">Show Stats</button>
-            </div>
-            <div class="player">
-                <img src="img/web-230925-quinnen-williams.webp" alt="Quinnen Williams" class="player-photo">
-                <h3>QUINNEN WILLIAMS</h3>
-                <p>POSITION: DEFENSIVE TACKLE</p>
-                <p>NUMBER: 95</p>
-                <button class="button">Show Stats</button>
-            </div>
-            <div class="player">
-                <img src="img/hcytqslo3kw5wupoweqb.jpg" alt="Quincy Williams" class="player-photo">
-                <h3>QUINCY WILLIAMS</h3>
-                <p>POSITION: LINEBACKER</p>
-                <p>NUMBER: 56</p>
-                <button class="button">Show Stats</button>
-            </div>
-        </div>
-    </section>
+<section id="team-logo">
+<h2>Team Logo History</h2>
+<img src="img/new-york-jets-logo-history-v0-by59gr782dxd1.webp" alt="New York Jets Logo" width="400">
+</section>
 
-    <section id="upcoming-games">
-        <h2>Upcoming Games</h2>
-        <ul>
-            <li>Week 1: 9/7 Jets vs Steelers (L 34-32)</li>
 
-            <li>Week 2: 9/14 Jets vs Bills</li>
+<section id="players">
+<h2>Players</h2>
+<div class="player-info">
+<div class="player">
+<img src="img/Justin-Fields-solo-scaled.avif" alt="Justin Fields" class="player-photo">
+<h3>JUSTIN FIELDS</h3>
+<p>POSITION: QUARTERBACK</p>
+<p>NUMBER: 7</p>
+<button class="button">Show Stats</button>
+<div class="stats">Passing Yards: 3,200 | TDs: 25 | INT: 10</div>
+</div>
+<div class="player">
+<img src="img/garret.webp" alt="Garret Wilson" class="player-photo">
+<h3>GARRET WILSON</h3>
+<p>POSITION: WIDE RECEIVER</p>
+<p>NUMBER: 5</p>
+<button class="button">Show Stats</button>
+<div class="stats">Receiving Yards: 1,250 | TDs: 10 | Receptions: 85</div>
+</div>
+<div class="player">
+<img src="img/breece.jpg" alt="Breece Hall" class="player-photo">
+<h3>BREECE HALL</h3>
+<p>POSITION: RUNNING BACK</p>
+<p>NUMBER: 20</p>
+<button class="button">Show Stats</button>
+<div class="stats">Rushing Yards: 1,100 | TDs: 12 | Catches: 40</div>
+</div>
+<div class="player">
+<img src="img/sauce.jpg" alt="Sauce Gardner" class="player-photo">
+<h3>SAUCE GARDNER</h3>
+<p>POSITION: CORNER BACK</p>
+<p>NUMBER: 1</p>
+<button class="button">Show Stats</button>
+<div class="stats">INTs: 5 | Tackles: 65 | Pass Def: 18</div>
+</div>
+<div class="player">
+<img src="img/quinnen.webp" alt="Quinnen Williams" class="player-photo">
+<h3>QUINNEN WILLIAMS</h3>
+<p>POSITION: DEFENSIVE TACKLE</p>
+<p>NUMBER: 95</p>
+<button class="button">Show Stats</button>
+<div class="stats">Sacks: 10 | Tackles: 70 | QB Hits: 20</div>
+</div>
+<div class="player">
+<img src="img/quincy.jpg" alt="Quincy Williams" class="player-photo">
+<h3>QUINCY WILLIAMS</h3>
+<p>POSITION: LINEBACKER</p>
+<p>NUMBER: 56</p>
+<button class="button">Show Stats</button>
+<div class="stats">Tackles: 120 | Sacks: 5 | Forced Fumbles: 3</div>
+</div>
+</div>
+</section>
 
-            <li>Week 3: 9/21 Jets vs Buccaneers</li>
 
-            <li>Week 4: 9/29 Jets vs Dolphins</li>
+<section id="upcoming-games">
+<h2>Upcoming Games</h2>
+<ul>
+<li>Week 1: 9/7 Jets vs Steelers (L 34-32)</li>
+<li>Week 2: 9/14 Jets vs Bills</li>
+<li>Week 3: 9/21 Jets vs Buccaneers</li>
+<li>Week 4: 9/29 Jets vs Dolphins</li>
+<li>Week 5: 10/5 Jets vs Cowboys</li>
+<li>Week 6: 10/12 Jets vs Broncos</li>
+<li>Week 7: 10/19 Jets vs Panthers</li>
+<li>Week 8: 10/26 Jets vs Bengals</li>
+<li>Week 9: BYE WEEK</li>
+<li>Week 10: 11/9 Jets vs Browns</li>
+<li>Week 11: 11/13 Jets vs Patriots</li>
+<li>Week 12: 11/23 Jets vs Ravens</li>
+<li>Week 13: 11/30 Jets vs Falcons</li>
+<li>Week 14: 12/7 Jets vs Dolphins</li>
+<li>Week 15: 12/14 Jets vs Jaguars</li>
+<li>Week 16: 12/21 Jets vs Saints</li>
+<li>Week 17: 12/28 Jets vs Patriots</li>
+<li>Week 18: 1/4 Jets vs Bills</li>
+</ul>
+</section>
 
-            <li>Week 5: 10/5 Jets vs Cowboys</li>
 
-            <li>Week 6: 10/12 Jets vs Broncos</li>
+<section id="highlights">
+<h2>Jets Highlights</h2>
+<div class="highlight-cards">
+<div class="highlight-card">
+<img src="img/joe-namath-super-bowl-3jpg.jpg" alt="Touchdown">
+<p>Joe Namath's iconic Super Bowl III win!</p>
+</div>
+<div class="highlight-card">
+<img src="img/s-l1200.jpg" alt="Touchdown">
+<p>Garret Wilson's amazing touchdown catch!</p>
+</div>
+<div class="highlight-card">
+<img src="img/mark-sanchez-playoffs-chargers-jets-927005dca54d0b11_large.jpg" alt="Big Sack">
+<p>Mark Sanchez back to back Afc Championship Games!</p>
+</div>
+</div>
+</section>
 
-            <li>Week 7: 10/19 Jets vs Panthers</li>
 
-            <li>Week 8: 10/26 Jets vs Bengals</li>
+<section id="fan-zone">
+<h2>Fan Zone & Jets Trivia</h2>
+<div class="trivia-cards">
+<div class="card">
+<h3>Did You Know?</h3>
+<p>The Jets were originally called the Titans of New York before moving to New York City in 1963.</p>
+</div>
+<div class="card">
+<h3>Record Holder</h3>
+<p>Joe Namath threw for over 27,000 yards during his Jets career.</p>
+</div>
+<div class="card">
+<h3>Fun Fact</h3>
+<p>The Jets current green color scheme was adopted in 1963 after the move from Titans.</p>
+</div>
+</div>
+</section>
 
-            <li>Week 9: BYE WEEK</li>
 
-            <li>Week 10: 11/9 Jets vs Browns</li>
+<footer>
+<p>🏈 J-E-T-S JETS JETS JETS! 🏈</p>
+</footer>
 
-            <li>Week 11: 11/13 Jets vs Patriots</li>
 
-            <li>Week 12: 11/23 Jets vs Ravens</li>
+<script>
 
-            <li>Week 13: 11/30 Jets vs Falcons</li>
 
-            <li>Week 14: 12/7 Jets vs Dolphis</li>
 
-            <li>Week 15: 12/14 Jets vs Jaguars</li>
 
-            <li>Week 16: 12/21 Jets vs Saints</li>
 
-            <li>Week 17: 12/28 Jets vs Patriots</li>
 
-            <li>Week 18: 1/4 Jets vs Bills</li>
-           
-        </ul>
-    </section>
 
-    
+
+document.querySelectorAll(".button").forEach(button => {
+button.addEventListener("click", () => {
+const stats = button.nextElementSibling;
+stats.style.display = (stats.style.display === "block") ? "none" : "block";
+});
+});
+</script>
 </body>
 </html>
